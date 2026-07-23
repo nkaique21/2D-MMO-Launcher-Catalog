@@ -4,8 +4,8 @@
   "name": "Medivia",
   "description": "MMORPG 2D clássico com experiência old-school e mundo persistente.",
   "assets": {
-    "banner": "assets/games/medivia/banner.webp",
-    "icon": "assets/games/medivia/icon.webp"
+    "banner": "assets/games/medivia/banner.svg",
+    "icon": "assets/games/medivia/icon.svg"
   },
   "installation": {
     "methods": [
@@ -19,11 +19,7 @@
         "url": "https://download.medivia.online/medivia-linux-build.zip",
         "format": "zip",
         "stripTopLevelDir": true,
-        "launchAfterInstall": true,
-        "headers": {
-          "User-Agent": "Mozilla/5.0",
-          "Referer": "https://www.tibia.com/account/?subtopic=downloadclient"
-        }
+        "launchAfterInstall": true
       }
     ]
   },

@@ -4,8 +4,8 @@
   "name": "RavenQuest",
   "description": "MMORPG 2D moderno com economia, progressão aberta e mundo persistente.",
   "assets": {
-    "banner": "assets/games/ravenquest/banner.jpg",
-    "icon": "assets/games/ravenquest/icon.webp"
+    "banner": "assets/games/ravenquest/banner.svg",
+    "icon": "assets/games/ravenquest/icon.svg"
   },
   "installation": {
     "methods": [

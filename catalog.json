@@ -32,11 +32,6 @@
       "id": "ravenquest",
       "manifest": "manifests/ravenquest.json",
       "enabled": true
-    },
-    {
-      "id": "stendhal",
-      "manifest": "manifests/stendhal.json",
-      "enabled": true
     }
   ]
 }

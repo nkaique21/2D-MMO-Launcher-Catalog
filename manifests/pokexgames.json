@@ -4,7 +4,7 @@
   "name": "PokeXGames",
   "description": "MMORPG 2D inspirado em criaturas, exploração e progressão persistente.",
   "assets": {
-    "banner": "assets/games/pokexgames/banner.webp",
+    "banner": "assets/games/pokexgames/banner.svg",
     "icon": "assets/games/pokexgames/icon.svg"
   },
   "installation": {

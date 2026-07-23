@@ -4,7 +4,7 @@
   "name": "PokeMMO",
   "description": "MMO de criaturas com regiões clássicas, batalhas competitivas e progressão persistente.",
   "assets": {
-    "banner": "assets/games/pokemmo/banner.png",
+    "banner": "assets/games/pokemmo/banner.svg",
     "icon": "assets/games/pokemmo/icon.svg"
   },
   "installation": {

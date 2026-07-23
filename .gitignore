@@ -1,3 +1,21 @@
+# Arquivos temporários
 __pycache__/
-*.pyc
-.venv/
+*.py[cod]
+*.log
+.DS_Store
+.vscode/
+.idea/
+
+# Contexto e instruções locais para agentes de IA
+/AGENTS.md
+/agents.md
+/PROJECT.md
+/MEMORY.md
+/STATE.md
+/MIGRATION.md
+/CONTENTS.md
+/docs/archive/
+/CLAUDE.md
+/.cline/
+/.codex/
+/.cursor/rules/
