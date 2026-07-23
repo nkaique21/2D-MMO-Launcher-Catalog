@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "ravenquest",
+  "name": "RavenQuest",
+  "description": "MMORPG 2D moderno com economia, progressão aberta e mundo persistente.",
+  "assets": {
+    "banner": "assets/games/ravenquest/banner.svg",
+    "icon": "assets/games/ravenquest/icon.svg"
+  },
+  "installation": {
+    "methods": [
+      {
+        "type": "existing",
+        "label": "Localizar instalação existente"
+      },
+      {
+        "type": "windowsInstaller",
+        "label": "Baixar instalador Windows",
+        "runner": "wine",
+        "compatPrefix": "proton",
+        "installPath": "drive_c/Program Files (x86)/Tavernlight Games/RavenQuest Launcher",
+        "launchAfterInstall": true,
+        "url": "https://dw.ravenquest.io/ravenquest_installer.exe"
+      }
+    ]
+  },
+  "launch": {
+    "runner": "proton",
+    "executable": "launcher.exe",
+    "args": [],
+    "env": {
+      "PROTONPATH": "~/.local/share/Steam/compatibilitytools.d/GE-Proton11-1",
+      "PROTON_BATTLEYE_RUNTIME": "~/.local/share/lutris/runtime/battleye_runtime",
+      "PROTON_EAC_RUNTIME": "~/.local/share/lutris/runtime/eac_runtime",
+      "WINEESYNC": "1",
+      "WINEFSYNC": "1",
+      "WINEARCH": "win64",
+      "WINEDEBUG": "-all"
+    },
+    "unsetEnv": [
+      "GAMEID",
+      "STORE"
+    ],
+    "battlEye": {
+      "enabled": true,
+      "executable": "drive_c/Program Files (x86)/Tavernlight Games/RavenQuest/ravenquest_dx_BE.exe",
+      "launchMode": "main",
+      "pathBase": "compatPrefix",
+      "workingDir": "drive_c/Program Files (x86)/Tavernlight Games/RavenQuest",
+      "workingDirBase": "compatPrefix",
+      "required": true
+    }
+  },
+  "verification": {
+    "requiredFiles": []
+  },
+  "update": {
+    "strategy": "remoteManifest",
+    "manifestUrl": "https://dw.ravenquest.io/ravenquest/checksums.txt.gz",
+    "manifestFormat": "ravenquestZlib",
+    "targetDir": "drive_c/Program Files (x86)/Tavernlight Games/RavenQuest",
+    "targetDirBase": "compatPrefix",
+    "maxConcurrentDownloads": 8
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "medivia",
+  "name": "Medivia",
+  "description": "MMORPG 2D clássico com experiência old-school e mundo persistente.",
+  "assets": {
+    "banner": "assets/games/medivia/banner.svg",
+    "icon": "assets/games/medivia/icon.svg"
+  },
+  "installation": {
+    "methods": [
+      {
+        "type": "existing",
+        "label": "Localizar instalação existente"
+      },
+      {
+        "type": "archive",
+        "label": "Baixar e instalar",
+        "url": "https://download.medivia.online/medivia-linux-build.zip",
+        "format": "zip",
+        "stripTopLevelDir": true,
+        "launchAfterInstall": true
+      }
+    ]
+  },
+  "launch": {
+    "runner": "native",
+    "executable": "medivia",
+    "args": []
+  },
+  "verification": {
+    "requiredFiles": [
+      "medivia"
+    ]
+  },
+  "update": {
+    "strategy": "manual"
+  }
+}

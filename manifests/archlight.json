@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "archlight",
+  "name": "Archlight",
+  "description": "MMORPG 2D inspirado em Tibia, com sistemas próprios de progressão e combate.",
+  "assets": {
+    "banner": "assets/games/archlight/banner.svg",
+    "icon": "assets/games/archlight/icon.svg"
+  },
+  "installation": {
+    "methods": [
+      {
+        "type": "existing",
+        "label": "Localizar instalação existente"
+      },
+      {
+        "type": "archive",
+        "label": "Baixar e instalar",
+        "url": "https://dw.archlightonline.com/abaldar.zip",
+        "format": "zip",
+        "launchAfterInstall": true
+      }
+    ]
+  },
+  "launch": {
+    "runner": "proton",
+    "executable": "abaldar.exe",
+    "args": []
+  },
+  "verification": {
+    "requiredFiles": [
+      "abaldar.exe",
+      "libEGL.dll",
+      "libGLESv2.dll"
+    ]
+  },
+  "update": {
+    "strategy": "manual"
+  }
+}

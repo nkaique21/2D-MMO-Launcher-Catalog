@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "grand-line-adventures",
+  "name": "Grand Line Adventures",
+  "description": "MMORPG 2D com foco em aventura, progressão e exploração em mundo persistente.",
+  "assets": {
+    "banner": "assets/games/grand-line-adventures/banner.svg",
+    "icon": "assets/games/grand-line-adventures/icon.svg"
+  },
+  "installation": {
+    "methods": [
+      {
+        "type": "existing",
+        "label": "Localizar instalação existente"
+      },
+      {
+        "type": "archive",
+        "label": "Baixar e instalar",
+        "url": "https://download.grandlineadventures.com/glaclient.zip",
+        "format": "zip",
+        "launchAfterInstall": true,
+        "headers": {
+          "User-Agent": "Mozilla/5.0",
+          "Referer": "https://grandlineadventures.com/en/"
+        }
+      }
+    ]
+  },
+  "launch": {
+    "runner": "native",
+    "executable": "glaclient-linux",
+    "args": []
+  },
+  "verification": {
+    "requiredFiles": [
+      "glaclient-linux"
+    ]
+  },
+  "update": {
+    "strategy": "manual"
+  }
+}

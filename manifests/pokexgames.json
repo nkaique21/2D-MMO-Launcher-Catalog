@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "pokexgames",
+  "name": "PokeXGames",
+  "description": "MMORPG 2D inspirado em criaturas, exploração e progressão persistente.",
+  "assets": {
+    "banner": "assets/games/pokexgames/banner.svg",
+    "icon": "assets/games/pokexgames/icon.svg"
+  },
+  "installation": {
+    "methods": [
+      {
+        "type": "existing",
+        "label": "Localizar instalação existente"
+      },
+      {
+        "type": "archive",
+        "label": "Baixar e instalar",
+        "url": "https://download.pokexgames.com/pxg-linux.zip",
+        "format": "zip",
+        "launchAfterInstall": true
+      }
+    ]
+  },
+  "launch": {
+    "runner": "native",
+    "executable": "pxgme-linux",
+    "args": []
+  },
+  "verification": {
+    "requiredFiles": [
+      "pxgme-linux"
+    ]
+  },
+  "update": {
+    "strategy": "manual"
+  }
+}
