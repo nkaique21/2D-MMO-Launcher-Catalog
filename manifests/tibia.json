@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "tibia",
+  "name": "Tibia",
+  "description": "MMORPG 2D clássico da CipSoft, com mundo persistente, exploração, progressão de personagem e economia entre jogadores.",
+  "assets": {
+    "banner": "assets/games/tibia/banner.webp",
+    "icon": "assets/games/tibia/icon.png"
+  },
+  "installation": {
+    "methods": [
+      {
+        "type": "existing",
+        "label": "Localizar instalação existente"
+      },
+      {
+        "type": "archive",
+        "label": "Baixar e instalar",
+        "url": "https://static.tibia.com/download/tibia.x64.tar.gz",
+        "format": "tar.gz",
+        "stripTopLevelDir": true,
+        "launchAfterInstall": true
+      }
+    ]
+  },
+  "launch": {
+    "runner": "native",
+    "executable": "Tibia",
+    "args": []
+  },
+  "verification": {
+    "requiredFiles": [
+      "Tibia"
+    ]
+  },
+  "update": {
+    "strategy": "manual"
+  }
+}
