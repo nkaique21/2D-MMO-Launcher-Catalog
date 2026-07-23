@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "stendhal",
+  "name": "Stendhal",
+  "description": "MMORPG 2D open source com exploração, quests, combate e progressão em um mundo persistente.",
+  "assets": {
+    "banner": "assets/games/stendhal/banner.jpg",
+    "icon": "assets/games/stendhal/icon.png"
+  },
+  "installation": {
+    "methods": [
+      {
+        "type": "archive",
+        "label": "Baixar e instalar",
+        "url": "https://arianne-project.org/download/stendhal.zip",
+        "format": "zip",
+        "stripTopLevelDir": false,
+        "launchAfterInstall": true
+      },
+      {
+        "type": "existing",
+        "label": "Localizar instalação existente"
+      }
+    ]
+  },
+  "launch": {
+    "runner": "command",
+    "executable": "java",
+    "args": [
+      "-jar",
+      "stendhal-starter.jar"
+    ],
+    "workingDirectory": "."
+  },
+  "requirements": [
+    {
+      "type": "executable",
+      "name": "Java Runtime",
+      "command": "java",
+      "help": "O Stendhal requer um Java Runtime instalado. No Arch/CachyOS: sudo pacman -S jre-openjdk"
+    }
+  ],
+  "verification": {
+    "requiredFiles": [
+      "stendhal-starter.jar",
+      "lib/stendhal.jar",
+      "lib/stendhal-data.jar",
+      "lib/stendhal-sound-data.jar",
+      "lib/stendhal-music-data.jar"
+    ]
+  },
+  "update": {
+    "strategy": "manual"
+  }
+}

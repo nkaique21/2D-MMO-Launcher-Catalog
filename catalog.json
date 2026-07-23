@@ -34,8 +34,8 @@
       "enabled": true
     },
     {
-      "id": "tibia",
-      "manifest": "manifests/tibia.json",
+      "id": "stendhal",
+      "manifest": "manifests/stendhal.json",
       "enabled": true
     }
   ]
