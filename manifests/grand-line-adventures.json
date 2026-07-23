@@ -4,7 +4,7 @@
   "name": "Grand Line Adventures",
   "description": "MMORPG 2D com foco em aventura, progressão e exploração em mundo persistente.",
   "assets": {
-    "banner": "assets/games/grand-line-adventures/banner.svg",
+    "banner": "assets/games/grand-line-adventures/banner.png",
     "icon": "assets/games/grand-line-adventures/icon.svg"
   },
   "installation": {
