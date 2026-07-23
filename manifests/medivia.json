@@ -4,8 +4,8 @@
   "name": "Medivia",
   "description": "MMORPG 2D clássico com experiência old-school e mundo persistente.",
   "assets": {
-    "banner": "assets/games/medivia/banner.svg",
-    "icon": "assets/games/medivia/icon.svg"
+    "banner": "assets/games/medivia/banner.webp",
+    "icon": "assets/games/medivia/icon.webp"
   },
   "installation": {
     "methods": [
