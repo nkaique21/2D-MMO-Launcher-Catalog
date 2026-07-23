@@ -12,7 +12,7 @@
       {
         "type": "archive",
         "label": "Baixar e instalar",
-        "url": "https://arianne-project.org/download/stendhal.zip",
+        "url": "https://sourceforge.net/projects/arianne/files/latest/download",
         "format": "zip",
         "stripTopLevelDir": false,
         "launchAfterInstall": true
