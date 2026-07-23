@@ -4,7 +4,7 @@
   "name": "Archlight",
   "description": "MMORPG 2D inspirado em Tibia, com sistemas próprios de progressão e combate.",
   "assets": {
-    "banner": "assets/games/archlight/banner.svg",
+    "banner": "assets/games/archlight/banner.png",
     "icon": "assets/games/archlight/icon.svg"
   },
   "installation": {
