@@ -19,7 +19,11 @@
         "url": "https://download.medivia.online/medivia-linux-build.zip",
         "format": "zip",
         "stripTopLevelDir": true,
-        "launchAfterInstall": true
+        "launchAfterInstall": true,
+        "headers": {
+          "User-Agent": "Mozilla/5.0",
+          "Referer": "https://www.tibia.com/account/?subtopic=downloadclient"
+        }
       }
     ]
   },

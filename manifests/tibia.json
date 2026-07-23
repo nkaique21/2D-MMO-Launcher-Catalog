@@ -19,7 +19,11 @@
         "url": "https://static.tibia.com/download/tibia.x64.tar.gz",
         "format": "tar.gz",
         "stripTopLevelDir": true,
-        "launchAfterInstall": true
+        "launchAfterInstall": true,
+        "headers": {
+          "User-Agent": "Mozilla/5.0",
+          "Referer": "https://www.tibia.com/account/?subtopic=downloadclient"
+        }
       }
     ]
   },
