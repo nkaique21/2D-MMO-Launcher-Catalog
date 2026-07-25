@@ -43,5 +43,10 @@
       "manifest": "manifests/mirage-realms.json",
       "enabled": true
     }
+    {
+      "id": "world-of-tolkien",
+      "manifest": "manifests/world-of-tolkien.json",
+      "enabled": true
+    }
   ]
 }

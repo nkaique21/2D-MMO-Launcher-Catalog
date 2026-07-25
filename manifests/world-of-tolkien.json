@@ -1,0 +1,61 @@
+{
+  "id": "world-of-tolkien",
+  "name": "World of Tolkien",
+  "description": "MMORPG 2D baseado em OTClient, com instalação e atualização diretas pelo manifesto oficial.",
+  "assets": {
+    "banner": "/assets/games/world-of-tolkien/banner.png",
+    "icon": "/assets/games/world-of-tolkien/icon.png"
+  },
+  "installation": {
+    "methods": [
+      {
+        "type": "existing",
+        "label": "Localizar instalação existente"
+      }
+    ]
+  },
+  "launch": {
+    "runner": "wine",
+    "executable": "wot_client.exe",
+    "args": [],
+    "env": {
+      "WINEDEBUG": "-all"
+    },
+    "unsetEnv": [],
+    "bridge": {
+      "type": "windowsNamedPipeHandshake",
+      "pipePrefix": "canary-launch-",
+      "tokenBytes": 32,
+      "helloTemplate": "HELLO|{token}",
+      "response": "OK",
+      "timeoutSeconds": 12,
+      "waitForClientExit": true,
+      "clientArgs": [
+        "--pipe",
+        "{pipe}",
+        "--tok",
+        "{token}",
+        "--ppid",
+        "{helperPid}",
+        "--verify-allsha",
+        "{allFilesSha256}",
+        "--manifest-url",
+        "{manifestUrl}"
+      ]
+    }
+  },
+  "verification": {
+    "requiredFiles": [
+      "wot_client.exe",
+      "init.lua"
+    ]
+  },
+  "update": {
+    "strategy": "remoteManifest",
+    "manifestUrl": "https://launcher.wotserver.com/updater/manifest.json",
+    "manifestFormat": "genericSha256Files",
+    "targetDir": "drive_c/Program Files/Wot Server",
+    "targetDirBase": "compatPrefix",
+    "maxConcurrentDownloads": 8
+  }
+}
