@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "mirage-realms",
+  "name": "Mirage Realms",
+  "description": "MMORPG 2D independente com mundo persistente, exploração, classes, comércio entre jogadores e progressão cooperativa.",
+  "assets": {
+    "banner": "assets/games/mirage-realms/banner.png",
+    "icon": "assets/games/mirage-realms/icon.png"
+  },
+  "installation": {
+    "methods": [
+      {
+        "type": "archive",
+        "label": "Baixar e instalar",
+        "url": "https://www.miragerealms.co.uk/files/clients/legacy/Mirage-LinuxX64.zip",
+        "format": "zip",
+        "stripTopLevelDir": true,
+        "launchAfterInstall": true
+      },
+      {
+        "type": "existing",
+        "label": "Localizar instalação existente"
+      }
+    ]
+  },
+  "launch": {
+    "runner": "native",
+    "executable": "Mirage Realms",
+    "args": [],
+    "workingDirectory": "."
+  },
+  "verification": {
+    "requiredFiles": [
+      "Mirage Realms",
+      "Obfuscated.jar",
+      "app/Mirage Realms.json",
+      "runtime/release"
+    ]
+  },
+  "update": {
+    "strategy": "manual"
+  }
+}

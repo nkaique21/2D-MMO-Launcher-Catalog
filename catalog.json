@@ -37,6 +37,11 @@
       "id": "stendhal",
       "manifest": "manifests/stendhal.json",
       "enabled": true
+    },
+    {
+      "id": "mirage-realms",
+      "manifest": "manifests/mirage-realms.json",
+      "enabled": true
     }
   ]
 }
