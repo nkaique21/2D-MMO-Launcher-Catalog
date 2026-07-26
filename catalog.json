@@ -47,6 +47,11 @@
       "id": "world-of-tolkien",
       "manifest": "manifests/world-of-tolkien.json",
       "enabled": true
+    },
+    {
+      "id": "endless-online",
+      "manifest": "manifests/endless-online.json",
+      "enabled": true
     }
   ]
 }

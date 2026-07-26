@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "endless-online",
+  "name": "Endless Online",
+  "description": "MMORPG 2D clássico com exploração, combate, comércio e progressão em um mundo persistente.",
+  "assets": {
+    "banner": "assets/games/endless-online/banner.webp",
+    "icon": "assets/games/endless-online/icon.webp"
+  },
+  "installation": {
+    "methods": [
+      {
+        "type": "existing",
+        "label": "Localizar instalação existente"
+      },
+      {
+        "type": "archive",
+        "label": "Baixar e instalar",
+        "url": "https://www.endless-online.com/client/0_04/EndlessOnline0451.zip",
+        "format": "zip",
+        "stripTopLevelDir": false,
+        "launchAfterInstall": true
+      }
+    ]
+  },
+  "launch": {
+    "runner": "wine",
+    "executable": "Endless.exe",
+    "args": []
+  },
+  "verification": {
+    "requiredFiles": [
+      "Endless.exe",
+      "EConfig.exe",
+      "config/setup.ini"
+    ],
+    "checksums": [
+      {
+        "path": "Endless.exe",
+        "algorithm": "sha256",
+        "value": "96aab2f533a3dccb6d1a0da5e4faa3dd60d5cf374ccfc9eada7b781b10eb2de7"
+      },
+      {
+        "path": "EConfig.exe",
+        "algorithm": "sha256",
+        "value": "30b722b857be295935a3f1656d2068a6d7d999bdcae0acd36b4d4c5ae248ac07"
+      }
+    ]
+  },
+  "update": {
+    "strategy": "manual"
+  },
+    "configuration": {
+    "type": "ini",
+    "path": "config/setup.ini",
+    "fallbackExecutable": "EConfig.exe",
+    "groups": []
+  }
+}
